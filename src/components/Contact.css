@@ -1,0 +1,101 @@
+.contact-section {
+  padding: 60px 20px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+
+  background: #f5f8ff;
+  border-radius: 20px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* LEFT */
+.contact-left h2 {
+  font-size: 28px;
+  color: #071331;
+  margin-bottom: 12px;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: #5f6b85;
+  margin-bottom: 18px;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.contact-socials img {
+  width: 40px;
+  height: 40px;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #e5ebff;
+}
+
+/* RIGHT */
+.contact-form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5ebff;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dbe4ff;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+  margin-bottom: 14px;
+}
+
+.send-btn {
+  background: #2f6bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-left {
+    flex: 1;
+  }
+
+  .contact-right {
+    flex: 1;
+  }
+}
