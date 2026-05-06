@@ -42,6 +42,27 @@
   color: #0b1533;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #2f6bff;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #2f6bff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .resume-btn {
@@ -69,7 +90,7 @@
   }
 
   .nav-logo img {
-    width: 150px;
+    width: 95px;
   }
 }
 
