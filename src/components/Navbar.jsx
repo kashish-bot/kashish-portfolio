@@ -35,7 +35,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/resume.pdf" download className="primary-btn">
-              <img src="/resume-icon.png" alt="" />
+              <img src="/resumelogo.png" alt="" />
               Resume
             </a>
           </li>
