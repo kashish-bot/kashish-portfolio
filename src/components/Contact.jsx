@@ -1,6 +1,29 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_8ry2rtk",
+        "template_amvr9d7",
+        form.current,
+        "QzTbxKiW7cJXwPFVV",
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        e.target.reset();
+      })
+      .catch(() => {
+        alert("Something went wrong. Please try again.");
+      });
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-bg">
@@ -22,26 +45,43 @@ function Contact() {
             </p>
 
             <div className="contact-socials">
-              <a href="#">
-                <img src="/behance icon.png" alt="Behance" />
+              <a href="https://www.behance.net/" target="_blank">
+                <img src="/behance-icon.png" alt="Behance" />
               </a>
-              <a href="#">
-                <img src="/linkedIn icon.png" alt="LinkedIn" />
+
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="/linkedin-icon.png" alt="LinkedIn" />
               </a>
-              <a href="mailto:youremail@gmail.com">
-                <img src="/gmail icon.png" alt="Gmail" />
+
+              <a href="mailto:kashishr772@gmail.com">
+                <img src="/gmail-icon.png" alt="Gmail" />
               </a>
             </div>
           </div>
 
           <div className="contact-right">
-            <form className="contact-form">
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
               <div className="form-row">
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Your E-mail" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your E-mail"
+                  required
+                />
               </div>
 
-              <textarea placeholder="Your Message"></textarea>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
 
               <button type="submit" className="send-btn">
                 Send Message
