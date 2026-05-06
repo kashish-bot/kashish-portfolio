@@ -9,25 +9,22 @@
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 18px 24px;
+  padding: 12px 24px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
 }
 
-/* .logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #0b1533;
-} */
- .nav-logo {
+.nav-logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-logo img {
-  width: 120px;
+  width: 110px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -36,7 +33,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -46,7 +43,6 @@
   font-size: 14px;
   font-weight: 600;
 }
-
 
 .resume-btn {
   background: #2f6bff;
@@ -63,23 +59,38 @@
   cursor: pointer;
 }
 
-/* mobile responsive */
+@media (max-width: 900px) {
+  .nav-container {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-logo img {
+    width: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
   }
 
+  .nav-container {
+    position: relative;
+  }
+
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 64px;
     left: 0;
     width: 100%;
-
     background: white;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-
     padding: 24px;
     display: none;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -88,13 +99,4 @@
   .nav-links.active {
     display: flex;
   }
-
-  .resume-btn {
-    display: inline-block;
-  }
-}
-
-.navbar {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
 }
