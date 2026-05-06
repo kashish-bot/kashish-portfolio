@@ -35,7 +35,7 @@ function Hero() {
 
         {/* RIGHT IMAGE */}
         <div className="hero-right">
-          <img src="/myProfile.png" alt="hero" />
+          <img src={`${import.meta.env.BASE_URL}myProfile.png`} alt="hero" />
         </div>
       </div>
     </section>
