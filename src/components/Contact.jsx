@@ -2,49 +2,53 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <section className="contact-section" id="contact">
-      <div className="contact-container">
-        {/* LEFT */}
-        <div className="contact-left">
-          <p className="section-label">LET'S CONNECT</p>
+    <section id="contact" className="contact-section">
+      <div className="contact-bg">
+        <div className="blob blob-top"></div>
+        <div className="blob blob-bottom"></div>
 
-          <h2>
-            Let’s build something <br /> meaningful together
-          </h2>
+        <div className="contact-content">
+          <div className="contact-left">
+            <p className="section-label">LET’S CONNECT</p>
 
-          <p className="contact-desc">
-            Have a project in mind or just wanna say hi 👋🏻? <br />
-            Feel free to reach out.
-          </p>
+            <h2>
+              Let’s build something <br />
+              meaningful together
+            </h2>
 
-          <div className="contact-socials">
-            <a href="https://www.behance.net/kashishrajput6">
-              <img src="/behance icon.png" />
-            </a>
-            <a href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/">
-              <img src="/linkedIn icon.png" />
-            </a>
-            <a href="#">
-              <img src="/gmail icon.png" />
-            </a>
-          </div>
-        </div>
+            <p className="contact-desc">
+              Have a project in mind or just wanna say hi 👋? <br />
+              Feel free to reach out.
+            </p>
 
-        {/* RIGHT */}
-        <div className="contact-right">
-          <form className="contact-form">
-            <div className="form-row">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your E-mail" />
+            <div className="contact-socials">
+              <a href="#">
+                <img src="/behance icon.png" alt="Behance" />
+              </a>
+              <a href="#">
+                <img src="/linkedIn icon.png" alt="LinkedIn" />
+              </a>
+              <a href="mailto:youremail@gmail.com">
+                <img src="/gmail icon.png" alt="Gmail" />
+              </a>
             </div>
+          </div>
 
-            <textarea placeholder="Your Message"></textarea>
+          <div className="contact-right">
+            <form className="contact-form">
+              <div className="form-row">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your E-mail" />
+              </div>
 
-            <button type="submit" className="send-btn">
-              Submit Message
-              <img src="/white-arrowlog.png" alt="" />
-            </button>
-          </form>
+              <textarea placeholder="Your Message"></textarea>
+
+              <button type="submit" className="send-btn">
+                Send Message
+                <img src="/white-arrowlogo.png" alt="" />
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
