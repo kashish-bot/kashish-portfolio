@@ -3,9 +3,7 @@ import "./Hero.css";
 function Hero() {
   return (
     <section className="hero" id="home">
-      
       <div className="hero-container">
-
         {/* LEFT CONTENT */}
         <div className="hero-left">
           <p className="tag">👋 Hello, I'm</p>
@@ -23,8 +21,15 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn primary">Resume</button>
-            <button className="btn secondary">View Projects →</button>
+            <a href="/resume.pdf" download className="primary-btn">
+              <img src="/resumelogo.png" alt="" />
+              Resume
+            </a>
+
+            <a href="#projects" className="secondary-btn">
+              View Projects
+              <img src="/arrowlogo.png" alt="" />
+            </a>
           </div>
         </div>
 
@@ -32,7 +37,6 @@ function Hero() {
         <div className="hero-right">
           <img src="/myProfile.png" alt="hero" />
         </div>
-
       </div>
     </section>
   );

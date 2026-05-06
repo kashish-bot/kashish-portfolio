@@ -4,7 +4,6 @@ function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
-
         {/* LEFT */}
         <div className="contact-left">
           <p className="section-label">LET'S CONNECT</p>
@@ -19,9 +18,15 @@ function Contact() {
           </p>
 
           <div className="contact-socials">
-            <a href="https://www.behance.net/kashishrajput6"><img src="/behance icon.png" /></a>
-            <a href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/"><img src="/linkedIn icon.png" /></a>
-            <a href="#"><img src="/gmail icon.png" /></a>
+            <a href="https://www.behance.net/kashishrajput6">
+              <img src="/behance icon.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/">
+              <img src="/linkedIn icon.png" />
+            </a>
+            <a href="#">
+              <img src="/gmail icon.png" />
+            </a>
           </div>
         </div>
 
@@ -36,11 +41,11 @@ function Contact() {
             <textarea placeholder="Your Message"></textarea>
 
             <button type="submit" className="send-btn">
-              Send Message →
+              Submit Message
+              <img src="/white-arrowlog.png" alt="" />
             </button>
           </form>
         </div>
-
       </div>
     </section>
   );
