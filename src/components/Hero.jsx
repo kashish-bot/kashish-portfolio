@@ -11,7 +11,7 @@ function Hero() {
           <h1>
             Kashish Rani <br />
             <span className="highlight">UI/UX Designer |</span> <br />
-            Frontend Learner
+            Frontend Enthusiast
           </h1>
 
           <p className="desc">

@@ -6,7 +6,7 @@ function Projects() {
       title: "Barber Syndicate",
       image: "/barber syndicate.png",
       desc: "A premium website design for a salon and grooming brand, focused on clean layout and strong visual presentation.",
-      tags: ["Web", "UI/UX"],
+      tags: ["Web", "Wholesale"],
       link: "https://git-branch-m-main.vercel.app/",
     },
     {
