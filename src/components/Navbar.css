@@ -16,10 +16,21 @@
   justify-content: space-between;
 }
 
-.logo {
+/* .logo {
   font-size: 22px;
   font-weight: 700;
   color: #0b1533;
+} */
+ .nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .nav-links {
