@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="/resume.pdf" download className="primary-btn">
+            <a href="/resume.pdf" download className="resume-btn">
               <img src="/resumelogo.png" alt="" />
               Resume
             </a>
