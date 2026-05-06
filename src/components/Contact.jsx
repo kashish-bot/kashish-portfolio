@@ -10,7 +10,7 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_8ry2rtk",
+        "service_id2of55",
         "template_amvr9d7",
         form.current,
         "QzTbxKiW7cJXwPFVV",
@@ -45,16 +45,19 @@ function Contact() {
             </p>
 
             <div className="contact-socials">
-              <a href="https://www.behance.net/" target="_blank">
-                <img src="/behance-icon.png" alt="Behance" />
+              <a href="https://www.behance.net/kashishrajput6" target="_blank">
+                <img src="/behance icon.png" alt="Behance" />
               </a>
 
-              <a href="https://www.linkedin.com/" target="_blank">
-                <img src="/linkedin-icon.png" alt="LinkedIn" />
+              <a
+                href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/"
+                target="_blank"
+              >
+                <img src="/linkedIn icon.png" alt="LinkedIn" />
               </a>
 
               <a href="mailto:kashishr772@gmail.com">
-                <img src="/gmail-icon.png" alt="Gmail" />
+                <img src="/gmail icon.png" alt="Gmail" />
               </a>
             </div>
           </div>
