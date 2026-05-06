@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <img src="/logo.png" alt="Kashish Logo" />
+          <img src="/logo 1.png" alt="Kashish Logo" />
         </div>
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✕" : "☰"}
