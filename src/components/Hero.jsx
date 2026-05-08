@@ -22,8 +22,8 @@ function Hero() {
 
           <div className="hero-buttons">
             <a
-              href={`${import.meta.env.BASE_URL}kashish-resume.pdf`}
-              download="kashish-resume.pdf"
+              href={`${import.meta.env.BASE_URL}newKashishResume.pdf`}
+              download="newKashishResume.pdf"
               className="primary-btn"
             >
               <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
