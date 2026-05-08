@@ -21,7 +21,11 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="/kashish-resume.pdf" download className="primary-btn">
+            <a
+              href={`${import.meta.env.BASE_URL}kashish-resume.pdf`}
+              download="kashish-resume.pdf"
+              className="primary-btn"
+            >
               <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
               Resume
             </a>

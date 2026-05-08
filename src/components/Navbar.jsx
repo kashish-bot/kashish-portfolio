@@ -37,7 +37,11 @@ export default function Navbar() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="/kashish-resume.pdf" download className="resume-btn">
+            <a
+              href={`${import.meta.env.BASE_URL}kashish-resume.pdf`}
+              download="kashish-resume.pdf"
+              className="resume-btn"
+            >
               <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
               Resume
             </a>
