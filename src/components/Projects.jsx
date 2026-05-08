@@ -69,7 +69,10 @@ function Projects() {
 
                 <a href={project.link} target="_blank" className="open-btn">
                   Open
-                  <img src="/white-arrowlogo.png" alt="arrow" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}white-arrowlogo.png`}
+                    alt="arrow"
+                  />
                 </a>
               </div>
             </div>
@@ -92,7 +95,10 @@ function Projects() {
 
                 <a href={project.link} target="_blank" className="case-btn">
                   Case Study
-                  <img src="/white-arrowlogo.png" alt="arrow" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}white-arrowlogo.png`}
+                    alt="arrow"
+                  />
                 </a>
               </div>
             </div>

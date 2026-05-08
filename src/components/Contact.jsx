@@ -97,7 +97,10 @@ function Contact() {
 
               <button type="submit" className="send-btn">
                 Send Message
-                <img src="/white-arrowlogo.png" alt="" />
+                <img
+                  src={`${import.meta.env.BASE_URL}white-arrowlogo.png`}
+                  alt=""
+                />
               </button>
             </form>
           </div>
