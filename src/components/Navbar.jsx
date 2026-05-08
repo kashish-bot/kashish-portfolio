@@ -8,7 +8,10 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <img src="/logo 1.png" alt="Kashish Logo" />
+          <img
+            src={`${import.meta.env.BASE_URL}logo 1.png`}
+            alt="Kashish Logo"
+          />
         </div>
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✕" : "☰"}
@@ -35,7 +38,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/kashish-resume.pdf" download className="resume-btn">
-              <img src="/resumelogo.png" alt="" />
+              <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
               Resume
             </a>
           </li>

@@ -22,13 +22,13 @@ function Hero() {
 
           <div className="hero-buttons">
             <a href="/kashish-resume.pdf" download className="primary-btn">
-              <img src="/resumelogo.png" alt="" />
+              <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
               Resume
             </a>
 
             <a href="#projects" className="secondary-btn">
               View Projects
-              <img src="/arrowlogo.png" alt="" />
+              <img src={`${import.meta.env.BASE_URL}arrowlogo.png`} alt="" />
             </a>
           </div>
         </div>

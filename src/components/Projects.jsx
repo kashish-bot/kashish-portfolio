@@ -4,21 +4,21 @@ function Projects() {
   const officeProjects = [
     {
       title: "Barber Syndicate",
-      image: "/barber syndicate.png",
+      image: `${import.meta.env.BASE_URL}barber syndicate.png`,
       desc: "A premium website design for a salon and grooming brand, focused on clean layout and strong visual presentation.",
       tags: ["Web", "Wholesale"],
       link: "https://git-branch-m-main.vercel.app/",
     },
     {
       title: "Debt Relief India",
-      image: "/DRI.png",
+      image: `${import.meta.env.BASE_URL}DRI.png`,
       desc: "A debt-relief web application design with intuitive screens, clear flow, and user-friendly experience.",
       tags: ["App", "Fintech"],
       link: "https://play.google.com/store/apps/details?id=com.deveshqurilo.dri&pcampaignid=web_share",
     },
     {
       title: "Bharat Bhakti Sangam",
-      image: "/bharat bhakti sangam.png",
+      image: `${import.meta.env.BASE_URL}bharat bhakti sangam.png`,
       desc: "A devotional event platform design for ticket booking, event details, and smooth user registration.",
       tags: ["Web", "Event Management"],
       link: "https://bharatbhaktisangam.com/",
@@ -27,19 +27,19 @@ function Projects() {
   const personalProjects = [
     {
       title: "StudyBuddy",
-      image: "/study buddy.png",
+      image: `${import.meta.env.BASE_URL}study buddy.png`,
       desc: "A productivity app concept that combines notes, journal, to-dos, pomodoro and an AI study assistant.",
       link: "https://www.behance.net/gallery/241311561/StudyBuddy-Productivity-App-for-Students",
     },
     {
       title: "Feast Hub",
-      image: "/feast hub.png",
+      image: `${import.meta.env.BASE_URL}feast hub.png`,
       desc: "A food delivery and dine-in booking app designed for a smooth and simple ordering experience.",
       link: "https://www.behance.net/gallery/193269423/FEAST-HUB",
     },
     {
       title: "Facial AI",
-      image: "/facial ai.png",
+      image: `${import.meta.env.BASE_URL}facial ai.png`,
       desc: "An AI-powered face analysis app that provides personalized improvement insights and training plans.",
       link: "https://www.behance.net/gallery/248097851/Facial-AI",
     },

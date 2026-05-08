@@ -4,36 +4,41 @@ function Connect() {
   const socials = [
     {
       name: "Behance",
-      icon: "/behance icon.png",
+      icon: `${import.meta.env.BASE_URL}behance icon.png`,
       link: "https://www.behance.net/kashishrajput6",
     },
     {
       name: "LinkedIn",
-      icon: "/linkedIn icon.png",
+      icon: `${import.meta.env.BASE_URL}linkedIn icon.png`,
       link: "https://www.linkedin.com/in/kashish-rajput-38b98b2a5/",
     },
     {
       name: "Gmail",
-      icon: "/gmail icon.png",
+      icon: `${import.meta.env.BASE_URL}gmail icon.png`,
       link: "kashishr772@gmail.com",
     },
   ];
 
   const tools = [
-    { name: "Figma", icon: "/figma icon.png" },
-    { name: "Photoshop", icon: "/photoshop icon.png" },
-    { name: "Illustrator", icon: "/illustrator icon.png" },
-    { name: "VS Code", icon: "/vs code icon.png" },
-    { name: "HTML", icon: "/html icon.png" },
-    { name: "CSS", icon: "/css icon.png" },
-    { name: "JS", icon: "/js icon.png" },
-    { name: "React", icon: "/react icon.png" },
+    { name: "Figma", icon: `${import.meta.env.BASE_URL}figma icon.png` },
+    {
+      name: "Photoshop",
+      icon: `${import.meta.env.BASE_URL}photoshop icon.png`,
+    },
+    {
+      name: "Illustrator",
+      icon: `${import.meta.env.BASE_URL}illustrator icon.png`,
+    },
+    { name: "VS Code", icon: `${import.meta.env.BASE_URL}vs code icon.png` },
+    { name: "HTML", icon: `${import.meta.env.BASE_URL}html icon.png` },
+    { name: "CSS", icon: `${import.meta.env.BASE_URL}css icon.png` },
+    { name: "JS", icon: `${import.meta.env.BASE_URL}js icon.png` },
+    { name: "React", icon: `${import.meta.env.BASE_URL}react icon.png` },
   ];
 
   return (
     <section className="connect">
       <div className="connect-container">
-
         {/* LEFT */}
         <div className="connect-left">
           <p className="section-label">LET'S CONNECT</p>
@@ -65,7 +70,6 @@ function Connect() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
