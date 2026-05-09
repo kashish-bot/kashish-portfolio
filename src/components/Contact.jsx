@@ -56,6 +56,7 @@ function Contact() {
               <a
                 href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={`${import.meta.env.BASE_URL}linkedIn icon.png`}
