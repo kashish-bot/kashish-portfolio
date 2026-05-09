@@ -19,8 +19,9 @@ function Contact() {
         alert("Message sent successfully!");
         e.target.reset();
       })
-      .catch(() => {
-        alert("Something went wrong. Please try again.");
+      .catch((error) => {
+        console.log("EmailJS Error:", error);
+        alert(error.text || "Something went wrong. Please try again.");
       });
   };
 
