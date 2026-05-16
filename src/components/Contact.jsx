@@ -54,7 +54,7 @@ function Contact() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/kashish-rajput-38b98b2a5/"
+                href="https://www.linkedin.com/in/kashish-rani-38b98b2a5/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

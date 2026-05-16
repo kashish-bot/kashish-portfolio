@@ -10,7 +10,7 @@ function Connect() {
     {
       name: "LinkedIn",
       icon: `${import.meta.env.BASE_URL}linkedIn icon.png`,
-      link: "https://www.linkedin.com/in/kashish-rajput-38b98b2a5/",
+      link: "https://www.linkedin.com/in/kashish-rani-38b98b2a5/",
     },
     {
       name: "Gmail",
