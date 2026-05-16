@@ -38,8 +38,8 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href={`${import.meta.env.BASE_URL}newKashishResume.pdf`}
-              download="newKashishResume.pdf"
+              href={`${import.meta.env.BASE_URL}newKashishResume1.pdf`}
+              download="newKashishResume1.pdf"
               className="resume-btn"
             >
               <img src={`${import.meta.env.BASE_URL}resumelogo.png`} alt="" />
